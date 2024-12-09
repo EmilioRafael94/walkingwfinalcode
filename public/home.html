@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | WalkingW</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #2d9d63;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            color: white;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 15px 20px;
+            transition: background 0.3s;
+        }
+        header nav a:hover {
+            background: #1e856d;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .banner-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background: #fff;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #2d9d63;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-links a {
+            color: #ffeb3b;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="WalkingW Logo" height="50">
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="cart.html">Cart</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    
+
+<main>
+    <h1>Welcome to WalkingW Final Website!</h1>
+    <p>Explore a wide range of shoes for every need and occasion.</p>
+
+    <!-- Banner Section -->
+    <img src="images/banner.jpg" alt="Shoe Banner" class="banner-img">
+    
+    <!-- Featured Products Section -->
+    <section>
+        <h2 class="section-title">Top Picks for You</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="images/shoe1.jpg" alt="Shoe 1" width="200">
+                <p><strong>Running Shoes</strong></p>
+                <p>$120</p>
+            </div>
+            <div class="product-card">
+                <img src="images/shoe2.jpg" alt="Shoe 2" width="200">
+                <p><strong>Casual Sneakers</strong></p>
+                <p>$90</p>
+            </div>
+            <div class="product-card">
+                <img src="images/shoe3.jpg" alt="Shoe 3" width="200">
+                <p><strong>Formal Shoes</strong></p>
+                <p>$150</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 WalkingW. All Rights Reserved.</p>
+    <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>
